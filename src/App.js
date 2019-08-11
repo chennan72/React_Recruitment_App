@@ -1,0 +1,23 @@
+import React, {Component} from 'react'
+import {BrowserRouter, Route, Switch} from "react-router-dom"
+// import Route from "react-router-dom/es/Route";
+import Login from "./pages/login/login";
+import Admin from "./pages/admin/admin"; // 只有引入module的時候才加「.」
+
+/*
+應用的根組件
+ */
+export default class App extends Component {
+
+
+    render() {
+        return (
+            <BrowserRouter>
+                <Switch>
+                    <Route path='/login' component={Login}></Route>
+                    <Route path='/' component={Admin}></Route>
+                </Switch>
+            </BrowserRouter>
+        )
+    }
+}
