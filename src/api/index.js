@@ -13,6 +13,19 @@ export const reqLogin = (username, password) => ajax('/login', {username, passwo
 // 添加用戶
 export const reqAddUser = (user) => ajax('/manage/user/add', user, 'POST');
 
+//獲取分類列表
+export const reqCategories = (parentId) => ajax('/manage/category/list', {parentId});
+//添加分類
+export const reqAddCategories = (categoryName, parentId) => ajax('/manage/category/add', {
+    categoryName,
+    parentId
+}, 'POST');
+//更新分類
+export const reqUpdateCategories = ({categoryId, categoryName}) => ajax('/manage/category/update', {
+    categoryId,
+    categoryName
+}, 'POST');
+
 /*
 jsonp接口請求函數
  */
