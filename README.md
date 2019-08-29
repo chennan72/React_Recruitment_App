@@ -1,4 +1,4 @@
-# React_Admin_FullStack
+# React_myNortheastern JOBS
 A full-stack Employment Agency SPA project, which has independent and separated frontend and backend part. 
 This spa app supports the functionality of logging in/registering an account, candidate/boss list, chatting, etc. 
 For the frontend, it is established on Reactjs+ES6+Webpack+antdMobile. 
